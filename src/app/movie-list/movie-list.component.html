@@ -1,1 +1,8 @@
-<p>movie-list works!</p>
+<app-search-criteria (onSearch)="search($event)"></app-search-criteria>
+
+
+<div *ngFor="let movie of movieSearch">
+<p>Title: {{ movie.title }}</p>
+<p> Overview: {{ movie.overview }}</p>
+<img src="{{ movie.thumbnail }}" alt="">
+</div>

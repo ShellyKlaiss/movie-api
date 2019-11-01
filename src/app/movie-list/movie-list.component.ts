@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchCriteriaService } from '../search-criteria/search-criteria.service'
 
 @Component({
   selector: 'app-movie-list',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private searchService: SearchCriteriaService) { }
+
+  movieSearch: any[] = [];
+
+  search(subName: string): void {
+    console.log(subName);
+  
+  this.searchService
+  .fetchData(subName)
+  .subscribe((response: any) => {
+    console.log(response)
+    this.movieSearch = response.results
+  }, error => {
+    console.log('oh no!')
+  });
+  }
 
   ngOnInit() {
   }
-
 }
