@@ -4,5 +4,5 @@
 <div *ngFor="let movie of movieSearch">
 <p>Title: {{ movie.title }}</p>
 <p> Overview: {{ movie.overview }}</p>
-<img src="{{ movie.thumbnail }}" alt="">
+<img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path}}" alt="">
 </div>
