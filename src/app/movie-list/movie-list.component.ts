@@ -17,6 +17,7 @@ export class MovieListComponent implements OnInit {
   
   this.searchService
   .fetchData(subName)
+  // .fetchGenre('oismoim')
   .subscribe((response: any) => {
     console.log(response)
     this.movieSearch = response.results
