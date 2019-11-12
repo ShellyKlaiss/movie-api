@@ -1,0 +1,43 @@
+.movie-panel {
+    width: 100%;
+    margin-left: 10%;
+    font-family: 'IBM Plex Mono', monospace;
+    position: relative;
+    display: 
+}
+
+.movie-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-single {
+    width: 40%;
+    border: 2px solid  #D8D8D8;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.movie-title {
+    font-family: inherit;
+    font-size: 12pt;
+    font-weight: 900;
+}
+
+.movie-release {
+    font-family: inherit;
+    font-size: 10pt;
+}
+
+.movie-overview {
+    font-family: 'Muli', sans-serif;
+}
+
+.movie-img {
+    float: left;
+    width: 185px;
+    height: 278px;
+}
+

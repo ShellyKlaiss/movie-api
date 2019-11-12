@@ -1,0 +1,53 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.top-panel {
+    width: 70%;
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    /* align-content: flex-start; */
+    flex-direction: column;
+}
+
+.nav-bar {
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 10%;
+}
+
+h1 {
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    color: #008475;
+    font-size: 30pt;
+    display: inline;
+    padding-right: 15%;
+}
+
+a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20pt;
+}
+
+.main-panel {
+    position: relative;
+    float: left;
+    width: 70%;
+    top: 100px;
+}
+
+.side-panel {
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 100vh;
+    margin-right: 10%;
+}
+
+.watch-list {
+
+}

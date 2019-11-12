@@ -1,0 +1,19 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.watch-panel {
+    background-color: #D8D8D8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: 'Muli', sans-serif;
+    font-weight: 900;
+    color: #008475;
+    padding-top: 20px;
+}

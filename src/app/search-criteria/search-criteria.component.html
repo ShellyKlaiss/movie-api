@@ -1,4 +1,17 @@
-<form #form="ngForm" (ngSubmit)="handleSubmit(form)">
-        <input type="text" ngModel name="subName">
-        <button>Search</button>
-</form>
+<section class="search-panel">
+        <form #form="ngForm" (ngSubmit)="handleSubmit(form)">
+                <div class="title">
+                        <label>Title</label>
+                        <input type="text" ngModel name="subName">
+                        <!-- <button>Search</button> -->
+                </div>
+                
+                <div class="genre">
+                        <label>Genre</label>
+                        <select [(ngModel)]="selectGenre" placeholder="Genre">
+                                <option *ngFor="let genre of genres" [value]="genre.id">{{ genre.name }}
+                                </option>
+                        </select>
+                </div>
+        </form>
+</section>

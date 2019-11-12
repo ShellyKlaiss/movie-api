@@ -1,2 +1,25 @@
-<h1>MOVIE DATABASE</h1>
-<app-movie-list></app-movie-list>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Muli:400,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="top-panel">
+        <div class="nav-bar">
+            <h1>Find a Flick</h1>
+            <span>
+                <a routerLink="home">Home</a>
+            </span>
+        </div>
+    </section>
+
+    <section class="main-panel">
+        <div class="movie-list">
+            <app-movie-list></app-movie-list>
+        </div>
+    </section>    
+
+    <section class="side-panel">
+        <div class="watch-list">
+            <app-watch-list></app-watch-list>
+        </div>
+    </section>
+</body>
