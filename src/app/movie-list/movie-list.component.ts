@@ -11,6 +11,7 @@ export class MovieListComponent implements OnInit {
   constructor(private searchService: SearchCriteriaService) { }
 
   movieSearch: any[] = [];
+  selectedMoview: any;
 
   search(subName: string): void {
     console.log(subName);

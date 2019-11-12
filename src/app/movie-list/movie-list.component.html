@@ -1,10 +1,13 @@
 <app-search-criteria (onSearch)="search($event)"></app-search-criteria>
 
-
-<div *ngFor="let movie of movieSearch">
-<p>{{ movie.title }}</p>
-<p>Release: {{ movie.release_date }}</p>
-<!-- <p> Overview: {{ movie.overview }}</p> -->
-<!-- <p> Genre: {{ movie.genres }}</p> -->
-<img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path}}" alt="">
+<div *ngFor="let movie of movieSearch" (click)="selectedMovie = movie">
+  <p>{{ movie.title }}</p>
+  <p>Release: {{ movie.release_date }}</p>
+  <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}" alt="" />
 </div>
+
+<!-- Movie Details -->
+<app-movie-details
+  *ngIf="selectedMovie"
+  [movie]="selectedMovie"
+></app-movie-details>
