@@ -6,7 +6,7 @@
 
 .watch-panel {
     background-color: #D8D8D8;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
