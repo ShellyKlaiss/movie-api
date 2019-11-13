@@ -1,0 +1,35 @@
+.search-panel {
+    font-family: 'IBM Plex Mono', monospace;
+    margin-left: 10%;
+}
+
+input {
+    border: none;
+    border-bottom: 5px solid #008475;
+    font-family: inherit;
+    font-size: 12pt;
+    display: block;
+}
+
+select {
+    border: none;
+    font-family: inherit;
+    font-size: 12pt;
+}
+
+label {
+    font-family: inherit;
+    font-size: 15pt;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.title {
+    float: left;
+    padding-right: 100px;
+}
+
+.genre {
+    float: left;
+
+}
