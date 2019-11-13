@@ -10,17 +10,17 @@
 
     <section class="movie-panel">
         <div class="movie-box" *ngFor="let movie of movieSearch">
-            <div class="movie-single">
-                <div class="movie-img">
-                    <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path}}" alt="">
-                </div>
+            <div class="movie-img">
+                <img src="https://image.tmdb.org/t/p/w200{{ movie.poster_path}}" alt="">
+            </div>
 
+            <div class="movie-info">
                 <div class="movie-title">
                     <p>{{ movie.title }}</p>
                 </div>
-                
+                    
                 <div class="movie-release">
-                    <p>{{ movie.release_date }}</p>
+                    <p>{{ movie.release_date | date: shortDate }}</p>
                 </div>
 
                 <div class="movie-overview">
