@@ -27,7 +27,7 @@
                     <p>{{ movie.overview }}</p>
                 </div>
 
-                <button class="add-watch">Add to Watchlist</button>
+                <button class="add-watch" (click)="addToWatchlist(movie.title)">Add to Watchlist</button>
             </div>
         </div>
     </section>    
