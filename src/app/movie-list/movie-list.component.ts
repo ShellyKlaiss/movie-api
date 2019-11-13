@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { SearchCriteriaService } from '../search-criteria/search-criteria.service'
+import { Component, OnInit, ɵConsole } from '@angular/core';
+import { SearchCriteriaService } from '../search-criteria/search-criteria.service';
 
 @Component({
   selector: 'app-movie-list',
@@ -10,20 +10,28 @@ export class MovieListComponent implements OnInit {
 
   constructor(private searchService: SearchCriteriaService) { }
 
+  watchlist = ['Example saved movie 1', 'Example saved movie 2', 'Example saved movie 3' ];
+
+  addToWatchlist(movieTitle) {
+    console.log(`The movie ${movieTitle} was added to the watchlist` );
+    this.watchlist.unshift(movieTitle);  // add to the array
+    console.log(this.watchlist);
+  }
+
+
+
   movieSearch: any[] = [];
-  selectedMoview: any;
 
   search(subName: string): void {
     console.log(subName);
-  
-  this.searchService
+
+    this.searchService
   .fetchData(subName)
-  // .fetchGenre('oismoim')
   .subscribe((response: any) => {
-    console.log(response)
-    this.movieSearch = response.results
-  }, error => {
-    console.log('oh no!')
+    console.log(response);
+    this.movieSearch = response.results;
+  }, () => {
+    console.log('oh no!');
   });
   }
 

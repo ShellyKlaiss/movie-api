@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieListComponent } from '../movie-list/movie-list.component';
 
 @Component({
   selector: 'app-watch-list',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WatchListComponent implements OnInit {
 
-  constructor() { }
+  constructor() {  }
+  // addToWatchlist() {
+  //   console.log('Add to watchlist button was pressed');
+  // }
 
   ngOnInit() {
   }
