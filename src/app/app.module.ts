@@ -9,7 +9,6 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { WatchListComponent } from './watch-list/watch-list.component';
 
 import { SearchCriteriaService } from  './search-criteria/search-criteria.service';
-import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 
 @NgModule({
@@ -17,8 +16,7 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
     AppComponent,
     SearchCriteriaComponent,
     MovieListComponent,
-    WatchListComponent,
-    MovieDetailsComponent
+    WatchListComponent
   ],
   imports: [
     BrowserModule,
